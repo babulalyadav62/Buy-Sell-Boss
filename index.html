@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buy&Sell Boss</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100vh;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#050505,#102a43,#0088cc);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.card{
+  width:100%;
+  max-width:430px;
+  background:white;
+  border-radius:28px;
+  padding:30px 22px;
+  text-align:center;
+  box-shadow:0 15px 50px rgba(0,0,0,.45);
+}
+
+.logo{
+  width:125px;
+  height:125px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid #0088cc;
+  margin-bottom:18px;
+}
+
+.logo-input{
+  display:block;
+  width:100%;
+  margin-bottom:18px;
+  font-size:13px;
+}
+
+h1{
+  font-size:25px;
+  color:#111;
+  margin-bottom:18px;
+}
+
+.description{
+  text-align:left;
+  background:#f3f6f8;
+  border-radius:17px;
+  padding:18px;
+  color:#222;
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:22px;
+}
+
+.join{
+  display:block;
+  width:100%;
+  padding:17px;
+  background:linear-gradient(135deg,#0088cc,#0066a3);
+  color:white;
+  text-decoration:none;
+  border-radius:14px;
+  font-size:19px;
+  font-weight:bold;
+  box-shadow:0 8px 20px rgba(0,136,204,.35);
+}
+
+.contact{
+  margin-top:18px;
+  color:#777;
+  font-size:13px;
+}
+
+.contact a{
+  color:#0088cc;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- DP -->
+  <img id="logo"
+       class="logo"
+       src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+       alt="Channel Logo">
+
+  <!-- अगर अपनी DP लगानी हो तो यहाँ से फोटो चुनें -->
+  <input
+    class="logo-input"
+    type="file"
+    accept="image/*"
+    onchange="changeLogo(event)"
+  >
+
+  <h1>
+     Join Kro App Link Private Channel Per Hai
+  </h1>
+
+  <div class="description">
+
+    📌 इस चैनल से रोज कमाई होगा 😆
+    <br>
+
+    और कोई भी ऐप सबसे फास्ट हमारे चैनल पर मिलेगा ⭐
+
+    <br><br>
+
+
+  </div>
+
+  <!-- JOIN BUTTON -->
+  <a
+    class="join"
+    href="https://t.me/+VESacsY0vHRkODk1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Join Unlock App
+  </a>
+
+  <div class="contact">
+    𝘼𝙉𝙔 𝙋𝙍𝙊𝘽𝙇𝙀𝙈 𝘾𝙊𝙉𝙏𝘼𝘾𝙏
+    <br>
+    <a
+      href="https://t.me/Yaduvanshi100_bot"
+      target="_blank"
+    >
+      https://t.me/+a9THcpl_nfg1NDA1
+    </a>
+  </div>
+
+</div>
+
+<script>
+function changeLogo(event){
+
+  const file = event.target.files[0];
+
+  if(file){
+
+    const reader = new FileReader();
+
+    reader.onload = function(e){
+
+      document.getElementById("logo").src = e.target.result;
+
+    };
+
+    reader.readAsDataURL(file);
+  }
+}
+</script>
+
+</body>
+</html>
